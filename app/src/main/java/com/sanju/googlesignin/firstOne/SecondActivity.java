@@ -1,4 +1,4 @@
-package com.sanju.googlesignin;
+package com.sanju.googlesignin.firstOne;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.sanju.googlesignin.R;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -23,7 +24,7 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(SecondActivity.this,MainActivity.class));
+                startActivity(new Intent(SecondActivity.this, MainActivity.class));
                 finish();
             }
         });
