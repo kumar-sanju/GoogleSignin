@@ -26,10 +26,6 @@
         <activity android:name=".GoogleSigninActivity">
 
         </activity>
-        <activity android:name=".LogoutActivity" />
-        <activity android:name=".GoogleActivity" />
-        <activity android:name=".SecondActivity" />
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

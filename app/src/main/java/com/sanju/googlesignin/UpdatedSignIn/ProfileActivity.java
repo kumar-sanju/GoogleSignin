@@ -23,7 +23,7 @@ import com.sanju.googlesignin.R;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    Button signout;
+    Button signout, logout_btn;
     GoogleSignInClient mGoogleSignInClient;
     TextView userName, userFirstName, userSecondName, userEmail, userId;
     ImageView profileImage;
@@ -40,6 +40,8 @@ public class ProfileActivity extends AppCompatActivity {
         userId = (TextView) findViewById(R.id.userID);
         profileImage = (ImageView) findViewById(R.id.profileimage);
         signout = (Button) findViewById(R.id.signout);
+        logout_btn = (Button) findViewById(R.id.logout_btn);
+        logout_btn.setVisibility(View.GONE);
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();

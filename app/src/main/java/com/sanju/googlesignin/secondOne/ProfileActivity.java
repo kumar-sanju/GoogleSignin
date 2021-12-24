@@ -15,7 +15,7 @@ import com.sanju.googlesignin.R;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    Button logout_btn;
+    Button logout_btn, signout;
     TextView email;
 
     @Override
@@ -24,6 +24,8 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         logout_btn = findViewById(R.id.logout_btn);
+        signout = (Button) findViewById(R.id.signout);
+        signout.setVisibility(View.GONE);
         email = findViewById(R.id.email);
 
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
